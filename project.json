@@ -1,0 +1,15 @@
+{
+  "name": "mess-learning",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "open-source/mess-learning",
+  "projectType": "library",
+  "tags": ["scope:open-source", "type:data"],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["open-source/mess-learning/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
