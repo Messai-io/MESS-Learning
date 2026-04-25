@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: dataset
+title: "@messai-io/mess-learning"
+version: "0.1.0"
+abstract: "Educational content and calculators for Microbial Electrochemical Systems"
+repository-code: "https://github.com/Messai-io/MESS-Learning.git"
+url: "https://github.com/Messai-io/MESS-Learning"
+license: "CC-BY-4.0"
+authors:
+  - family-names: "Frons"
+    given-names: "Sam"
+    affiliation: "MESSAI"

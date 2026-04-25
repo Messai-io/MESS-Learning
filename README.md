@@ -1,5 +1,18 @@
 # MESS-Learning
 
+<!-- MIRROR_DISCLOSURE_START -->
+
+> **This repository is a downstream mirror.** Source of truth lives in the
+> private `messai-ai` monorepo; this mirror is updated automatically on each
+> release. Issues and Discussions are welcome here. PRs against this mirror will
+> be redirected — see [CONTRIBUTING.md](./CONTRIBUTING.md).
+>
+> History was reset on **YYYY-MM-DD** as part of monorepo consolidation.
+> Versions tagged before that date (e.g. `v0.2.0`) remain accessible as
+> historical refs and retain their Zenodo DOIs.
+
+<!-- MIRROR_DISCLOSURE_END -->
+
 **Educational content and calculators for Microbial Electrochemical Systems**
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -48,15 +61,15 @@ const calc = new SustainabilityCalculator();
 
 // Calculate carbon footprint comparison
 const comparison = calc.carbonFootprint({
-  wastewaterVolume: 1000,  // m³/day
+  wastewaterVolume: 1000, // m³/day
   currentTechnology: 'activated_sludge',
-  proposedTechnology: 'mfc'
+  proposedTechnology: 'mfc',
 });
 
-console.log(comparison.currentEmissions);   // kg CO2/year
-console.log(comparison.proposedEmissions);  // kg CO2/year
-console.log(comparison.reduction);          // %
-console.log(comparison.equivalentTrees);    // Trees offset
+console.log(comparison.currentEmissions); // kg CO2/year
+console.log(comparison.proposedEmissions); // kg CO2/year
+console.log(comparison.reduction); // %
+console.log(comparison.equivalentTrees); // Trees offset
 ```
 
 ### Life Cycle Assessment
@@ -70,8 +83,8 @@ const lca = new LCACalculator();
 const results = lca.analyze({
   systemType: 'mfc',
   scale: 'pilot',
-  lifetime: 10,  // years
-  location: 'US'
+  lifetime: 10, // years
+  location: 'US',
 });
 
 console.log(results.environmentalImpact);
@@ -92,11 +105,11 @@ const roi = econ.calculateROI({
   operationalCostPerYear: 5000,
   energyRecoveryPerYear: 8000,
   wastewaterSavingsPerYear: 12000,
-  lifetime: 15
+  lifetime: 15,
 });
 
-console.log(roi.paybackPeriod);      // years
-console.log(roi.netPresentValue);    // $
+console.log(roi.paybackPeriod); // years
+console.log(roi.netPresentValue); // $
 console.log(roi.internalRateReturn); // %
 ```
 
@@ -110,8 +123,8 @@ const sdg = new SDGAlignment();
 // Map MES applications to UN SDGs
 const alignment = sdg.analyze('wastewater_treatment_mfc');
 
-console.log(alignment.primaryGoals);    // [6, 7, 13] (Water, Energy, Climate)
-console.log(alignment.secondaryGoals);  // [9, 11, 12]
+console.log(alignment.primaryGoals); // [6, 7, 13] (Water, Energy, Climate)
+console.log(alignment.secondaryGoals); // [9, 11, 12]
 console.log(alignment.impactMetrics);
 ```
 
@@ -132,14 +145,14 @@ function TypesPage() {
 
 ## Educational Modules
 
-| Module | Description |
-|--------|-------------|
-| Fundamentals | Basic MES principles |
+| Module           | Description                 |
+| ---------------- | --------------------------- |
+| Fundamentals     | Basic MES principles        |
 | Electrochemistry | Redox reactions, potentials |
-| Microbiology | Electroactive bacteria |
-| Applications | Real-world use cases |
-| Economics | Cost-benefit analysis |
-| Sustainability | Environmental impact |
+| Microbiology     | Electroactive bacteria      |
+| Applications     | Real-world use cases        |
+| Economics        | Cost-benefit analysis       |
+| Sustainability   | Environmental impact        |
 
 ## API Reference
 
@@ -151,7 +164,8 @@ We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Links
 
