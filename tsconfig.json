@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {},
-  "files": [],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
-  "exclude": ["node_modules", "dist", "site", ".next"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "site",
+    ".next",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx"
+  ],
   "references": [
     {
       "path": "../../libs/shared/ui"

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Card } from '@messai/ui';
+import { Card } from '../components/Card';
 
 interface GlobalImpactMapProps {
   level: number;
