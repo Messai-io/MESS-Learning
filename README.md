@@ -28,9 +28,16 @@ MESS-Learning provides educational tools and interactive visualizations for MES:
 
 ## Installation
 
+> **Not yet published to npm.** This package is source-available here while its
+> public API stabilises. Use it by cloning the mirror:
+
 ```bash
-npm install @messai-io/mess-learning
+git clone https://github.com/Messai-io/MESS-Learning.git
+cd MESS-Learning && pnpm install && pnpm build
 ```
+
+Track [the packaging issue](https://github.com/Messai-io/MESS-Learning/issues)
+for the npm release.
 
 ## Features
 
@@ -227,8 +234,6 @@ Encoded per-m³ assumptions (from the component's assumptions panel):
   clear they are illustrative defaults, not primary data.
 
 ## API Reference
-
-See [API Documentation](docs/API.md) for complete reference.
 
 ## Contributing
 
